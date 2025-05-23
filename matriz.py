@@ -10,8 +10,8 @@ for i in range(linhas):
     matriz[i] = [0] * colunas
 
 #Recebe Valores
-for i in range(linhas):
-    for j in range(colunas):
+for i in range(len(matriz)):
+    for j in range(len(matriz[0])):
         matriz[i][j] = int(input(f'Digite o valor do a({i}, {j}): '))
     print()
 
@@ -21,3 +21,5 @@ for i in range(linhas):
         print("  ", matriz[i][j], end="   ")
     print()
     print()
+
+#Posso substituir o range(linhas por range(matriz)) e range(colunas) por range(matriz[0]))
