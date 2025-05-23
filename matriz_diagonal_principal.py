@@ -25,7 +25,7 @@ for i in range(linhas):
 #Recebendo Valores
 for i in range(linhas):
     for j in range(colunas):
-        matriz[i][j] = int(input(f'Digite o valor do a({i}, {j}): '))
+        matriz[i][j] = int(input(f'Digite o valor do a({i + 1}, {j + 1}): '))
     print()
 
 #Mostrando Valores
@@ -40,7 +40,7 @@ for i in range(linhas):
 #Produto da Diagonal
 if linhas == colunas:
     print(f'O produto da diagonal principal é: {prod_diag(matriz)}')
-    print(diag_princ(matriz))
+    print(diag_princ(matriz), end="  ")
 
 elif linhas != colunas:
     print("O número de linhas e colunas é diferente, portanto não é possível fazer o produto da diagonal principal")
